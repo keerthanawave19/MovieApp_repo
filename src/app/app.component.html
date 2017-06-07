@@ -1,0 +1,17 @@
+<md-toolbar color="primary">
+ <span><h2>{{title}}</h2> </span>
+ <span class="head"><button md-button>HOME</button></span>
+ <span class="head"><button md-button>ABOUT</button></span>
+<app-search></app-search>
+</md-toolbar>
+
+   
+   <md-card id="card" *ngFor="let fm of f">
+
+    <md-card-header>
+        <md-card-title>{{fm.Title}}</md-card-title>
+        <md-card-subtitle>{{fm.Year}}</md-card-subtitle>
+     </md-card-header>
+     </md-card>   
+
+<router-outlet></router-outlet>

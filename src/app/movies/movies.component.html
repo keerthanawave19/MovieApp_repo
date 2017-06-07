@@ -1,0 +1,24 @@
+<md-card id="card" *ngFor="let mov of moviesName">
+
+    <md-card-header>
+        <md-card-title>{{mov.title}}</md-card-title>
+        <md-card-subtitle>{{mov.year}}</md-card-subtitle>
+        
+       
+    
+     <img md-card-image src="{{mov.Poster}}">
+
+     <span><button class="btn btn-info" (click)=favMovie()>Favmovies</button></span>
+     
+     </md-card-header>
+     </md-card>
+     <md-card id="card" *ngFor="let fm of f">
+
+    <md-card-header>
+        <md-card-title>{{fm.Title}}</md-card-title>
+        <md-card-subtitle>{{fm.Year}}</md-card-subtitle>
+     </md-card-header>
+     </md-card>   
+
+  
+ 
